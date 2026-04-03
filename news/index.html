@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Landmark Capital Advisors News Portal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f4f6fb}
+
+/* TOP BAR */
+.topbar{background:#111;color:#fff;padding:8px;text-align:center;font-size:13px}
+
+/* NAV */
+.navbar{
+  background:#fff;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  border-bottom:1px solid #eee;
+}
+.logo{font-weight:700;color:#d32f2f;font-size:22px}
+.nav a{margin:0 10px;text-decoration:none;color:#333}
+
+/* BREAKING */
+.breaking{
+  background:#d32f2f;
+  color:#fff;
+  padding:10px;
+  text-align:center;
+}
+
+/* GRID */
+.container{padding:40px}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:30px}
+
+.main-news img{width:100%;border-radius:10px}
+.main-news h2{cursor:pointer;margin-top:10px}
+
+.side-news div{
+  background:#fff;
+  padding:15px;
+  margin-bottom:10px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.side-news div:hover{background:#f1f1f1}
+
+/* PR SECTION */
+.pr-section{padding:40px}
+.pr-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.pr-card{
+  background:#fff;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+.pr-card:hover{transform:translateY(-5px)}
+
+.pr-card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+
+.pr-card a{
+  color:#d32f2f;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* BLOG */
+.blog{
+  display:none;
+  max-width:900px;
+  margin:40px auto;
+  background:#fff;
+  padding:40px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+.blog h2{margin-top:20px}
+.blog p{margin-top:10px;line-height:1.7}
+.back{color:#d32f2f;cursor:pointer;margin-bottom:20px}
+
+/* FOOTER */
+.footer{text-align:center;padding:20px;margin-top:40px;font-size:14px;color:#666}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .grid{grid-template-columns:1fr}
+  .navbar{padding:15px 20px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">Real Estate Insights | Governance | Structured Investing</div>
+
+<div class="navbar">
+  <div class="logo">Landmark News</div>
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">Markets</a>
+    <a href="#">Investment</a>
+  </div>
+</div>
+
+<div class="breaking">
+🔥 Breaking: Structured real estate investing is shaping long-term strategies in India
+</div>
+
+<!-- HOME -->
+<div id="home" class="container">
+  <div class="grid">
+
+    <div class="main-news" onclick="openBlog()">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+      <h2>Landmark Capital Advisors News: Insights & Market Strategy</h2>
+      <p>Explore governance-driven investing, capital discipline, and long-term real estate strategies.</p>
+    </div>
+
+    <div class="side-news">
+      <div onclick="openBlog()">📈 Institutional Investment Trends</div>
+      <div onclick="openBlog()">🏗️ Real Estate Cycles</div>
+      <div onclick="openBlog()">💼 Capital Strategy</div>
+      <div onclick="openBlog()">📊 Governance Insights</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PR SECTION WITH IMAGES -->
+<div class="pr-section">
+  <h2 style="text-align:center;margin-bottom:25px;">Latest Press Releases</h2>
+
+  <div class="pr-grid">
+
+    <div class="pr-card">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa">
+      <h3>India Real Estate Growth Phase</h3>
+      <p>Institutional investment and governance insights shaping the sector.</p>
+      <a href="#" target="_blank">Read Full Article →</a>
+    </div>
+
+    <div class="pr-card">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
+      <h3>Structured Investment Strategy</h3>
+      <p>Understanding disciplined capital deployment in evolving markets.</p>
+      <a href="#" target="_blank">Read Full Article →</a>
+    </div>
+
+    <div class="pr-card">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf">
+      <h3>Market Outlook & Capital Flow</h3>
+      <p>How long-term strategies are redefining real estate investment.</p>
+      <a href="#" target="_blank">Read Full Article →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- BLOG -->
+<div id="blog" class="blog">
+  <div class="back" onclick="goBack()">← Back to News</div>
+
+  <h1>Landmark Capital Advisors News</h1>
+
+  <p>The term landmark capital advisors news is increasingly appearing across professional platforms as structured real estate investing grows. Clear, insight-driven communication is essential in today’s fast-moving market.</p>
+
+  <p>Rather than focusing on short-term headlines, discussions center on capital discipline, asset-level strategy, and long-term alignment.</p>
+
+  <h2>A Focus on Clarity Over Noise</h2>
+  <p>Real estate markets are cyclical, but meaningful insights come from structured understanding and measured analysis.</p>
+
+  <h2>Leadership Perspective</h2>
+  <ul>
+    <li>Understanding real estate cycles</li>
+    <li>Defined risk-based capital structuring</li>
+    <li>Investor alignment with execution</li>
+    <li>Long-term stability over short-term gains</li>
+  </ul>
+
+  <h2>Market Insights</h2>
+  <ul>
+    <li>Transparency in communication</li>
+    <li>Structured capital deployment</li>
+    <li>Realistic outlook</li>
+    <li>Long-term investment focus</li>
+  </ul>
+
+  <h2>Conclusion</h2>
+  <p>The growing relevance of landmark capital advisors news reflects a shift toward disciplined, governance-driven investing.</p>
+
+  <p>
+  This perspective has also been covered in external publications.
+  <a href="#" target="_blank">Read detailed coverage →</a>
+  </p>
+
+</div>
+
+<div class="footer">
+© 2026 Landmark Capital Advisors News Portal
+</div>
+
+<script>
+function openBlog(){
+  document.getElementById('home').style.display='none';
+  document.querySelector('.pr-section').style.display='none';
+  document.getElementById('blog').style.display='block';
+}
+
+function goBack(){
+  document.getElementById('home').style.display='block';
+  document.querySelector('.pr-section').style.display='block';
+  document.getElementById('blog').style.display='none';
+}
+</script>
+
+</body>
+</html>
+
